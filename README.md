@@ -1,7 +1,7 @@
 # typescript projelerinizde pm2 kullanma örneği.
 
 
-Öncelikle ```npm install typescript --save-dev``` modülünü yükledikten sonra  ```npm install copyfiles --save-dev```  
+Öncelikle ```npm install typescript --save-dev``` modülünü yüklemelisiniz yüklendikten sonra  ```npm install copyfiles --save-dev```  
 modülünüde yükledikten sonra ```npm run build``` komutunu kullanarak dosyalarınızı JavaScript dosyalarına derleyin. Daha sonra ise pm2 yi yüklemelisiniz, ```npm install pm2 -g``` yüklendikten sonra ise ```npm run start``` kullanarak sistemleri başlatın.
 
 
