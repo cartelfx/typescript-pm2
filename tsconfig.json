@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "outDir": "./dist", // Derlenmiş dosyaların çıkış dizini
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+      "./src/**/*" // Derlenmesi gereken dosyaların ve klasörlerin yolu
+    ],
+    "exclude": [
+      "node_modules",
+      "dist" // Derleme sırasında dist klasörünü dikkate alma
+    ]
+  }

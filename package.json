@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "start": "pm2 start ecosystem.config.js --env production",
+    "build": "tsc && copyfiles './src/**/*' './dist'"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "copy-files": "^0.1.0"
+  },
+  "name": "typescript-pm2",
+  "version": "1.0.0",
+  "main": "ecosystem.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
