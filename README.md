@@ -1,6 +1,36 @@
 ## typescript projelerinizde pm2 kullanma örneği.
 
 
-Öncelikle ```npm install typescript --save-dev``` yükleyerek tüm typescript ile derlemelisiniz, yüklendikten sonra tsc komutunu kullanarak tüm typescript kodlarınızı javascript'e derleyin.
+Öncelikle ```npm install typescript --save-dev``` kullanarak daha sonra ise ```npm install copyfiles --save-dev```  
+modülünü yükledikten sonra ```npm run build``` komutunu kullanarak dosyalarınızı JavaScript dosyalarına derleyin. Daha sonra ise pm2 yi yüklemelisiniz, ```npm install pm2 -g``` yüklendikten sonra ise ```npm run start``` kullanarak sistemleri başlatın.
 
-daha sonra ise pm2 yi yüklemelisiniz, ```npm install pm2 -g``` yüklendikten sonra ise ```pm2 start ecosystem.config.js --env production``` kullanarak sistemleri başlatın.
+
+# YENİ UYGULAMA TASLAĞI
+```js
+ {
+
+            name: 'yeni app',
+
+            script: 'dist/APP/index.js',
+
+            autorestart: true,
+
+            watch: false,
+
+            max_memory_restart: '1G',
+
+            env: {
+
+                NODE_ENV: 'development'
+
+            },
+
+            env_production: {
+
+                NODE_ENV: 'production'
+
+            }
+
+        },
+
+```
